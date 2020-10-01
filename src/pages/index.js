@@ -1,43 +1,43 @@
+import { Link } from "gatsby";
 import React from "react";
 
-import Layout from "../components/layout";
+import IndexLayout from "../components/indexLayout";
 import SEO from "../components/seo";
-import catAndHumanIllustration from "../images/cat-and-human-illustration.svg";
 
 function IndexPage() {
   return (
-    <Layout>
+    <IndexLayout>
       <SEO
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
         title="Home"
       />
 
-      <section className="text-center">
-        <img
-          alt="Cat and human sitting on a couch"
-          className="block w-1/2 mx-auto mb-8"
-          src={catAndHumanIllustration}
-        />
-
-        <h2 className="inline-block p-3 mb-4 text-2xl font-bold bg-yellow-400">
-          Hey there! Welcome to your first Gatsby site.
-        </h2>
-
-        <p className="leading-loose">
-          This is a barebones starter for Gatsby styled using{` `}
-          <a
-            className="font-bold text-gray-900 no-underline"
-            href="https://tailwindcss.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Tailwind CSS
-          </a>
-          , a utility-first CSS framework.
-        </p>
+      <section className="text-gray-700 body-font">
+        <div className="container mx-auto flex px-5 py-56 md:flex-row flex-col items-center">
+          <div className="text-center w-full">
+            <h1
+              style={heroTitle}
+              className="tracking-widest title-font sm:text-4xl mb-16 font-medium text-white uppercase"
+            >
+              The Code Studios
+            </h1>
+            <div className="flex justify-center mb-2">
+              <Link
+                to="/artwork"
+                className="inline-flex text-gray-900 tracking-widest font-bold bg-white border-0 py-2 px-6 rounded-sm text-base uppercase focus:outline-none"
+              >
+                View artwork
+              </Link>
+            </div>
+          </div>
+        </div>
       </section>
-    </Layout>
+    </IndexLayout>
   );
 }
+
+const heroTitle = {
+  fontSize: `64px`,
+};
 
 export default IndexPage;
