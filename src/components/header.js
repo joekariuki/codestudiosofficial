@@ -14,7 +14,7 @@ function Header() {
   `);
 
   return (
-    <header className="bg-transparent">
+    <header className="bg-transparent font-sans">
       <div className="container mx-auto flex flex-wrap p-5 border-b-2 border-white flex-col md:flex-row items-center">
       <button
           className="flex items-center block px-3 py-2 text-white border-none md:hidden"
@@ -40,7 +40,7 @@ function Header() {
         <nav
           className={`${
             isExpanded ? `block` : `hidden`
-          } md:block md:flex md:items-center w-full md:w-auto ml-auto`}
+          } md:block md:flex md:items-center w-full md:w-auto ml-auto uppercase`}
         >
           {[
             {
@@ -52,12 +52,8 @@ function Header() {
               title: `Artwork`,
             },
             {
-              route: `/lookbooks`,
-              title: `Lookbooks`,
-            },
-            {
-              route: `/shop`,
-              title: `Shop`,
+              route: `/fashion`,
+              title: `Fashion`,
             }
           ].map((link) => (
             <Link
