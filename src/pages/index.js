@@ -1,5 +1,6 @@
-import { Link } from "gatsby";
 import React from "react";
+
+import "../css/index.css";
 
 import IndexLayout from "../components/indexLayout";
 import SEO from "../components/seo";
@@ -17,18 +18,13 @@ function IndexPage() {
           <div className="text-center w-full">
             <h1
               style={heroTitle}
-              className="tracking-widest title-font sm:text-4xl mb-16 font-medium text-white uppercase"
+              className="tracking-widest title-font sm:text-4xl font-medium text-white uppercase"
             >
-              The Code Studios
+              The Code
             </h1>
-            <div className="flex justify-center mb-2">
-              <Link
-                to="/artwork"
-                className="inline-flex text-gray-900 tracking-widest font-bold bg-white border-0 py-2 px-6 rounded-sm text-base uppercase focus:outline-none"
-              >
-                View artwork
-              </Link>
-            </div>
+            <h1 className="title-font text-3xl mb-16 font-medium text-white uppercase">
+              Studios
+            </h1>
           </div>
         </div>
       </section>
@@ -38,6 +34,7 @@ function IndexPage() {
 
 const heroTitle = {
   fontSize: `64px`,
+  letterSpacing: `0.35em`,
 };
 
 export default IndexPage;
