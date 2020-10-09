@@ -5,7 +5,7 @@ function Footer() {
     <footer className="text-gray-700 body-font bg-transparent">
       <div className="container mx-auto py-4 px-5 grid grid-cols-3 gap-4" >
           <div></div>
-          <p className="text-white text-sm text-center mx-auto">
+          <p className="uppercase text-white text-sm text-center mx-auto" style={footerText}>
             © 2020 The Code Studios
           </p>
 
@@ -69,6 +69,10 @@ function Footer() {
         </div>
     </footer>
   );
+}
+
+const footerText = {
+  letterSpacing: `.1em`,
 }
 
 export default Footer;
