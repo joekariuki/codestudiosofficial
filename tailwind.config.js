@@ -3,7 +3,11 @@ module.exports = {
   purge: [
     './src/**/*.js',
   ],
-  theme: {},
+  theme: {
+    fontFamily: {
+      'sans': 'Calibri',
+    }
+  },
   variants: {},
   // https://github.com/tailwindcss/custom-forms
   plugins: [require("@tailwindcss/custom-forms")],
