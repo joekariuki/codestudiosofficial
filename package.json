@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-tailwind",
-  "description": "Gatsby starter styled with Tailwind",
+  "name": "code-studios-website",
+  "description": "The Official Code Studios Website",
   "version": "4.0.0",
-  "author": "Taylor Bryant <taylor@bryant.io>",
+  "author": "Joe Kariuki",
   "dependencies": {
     "gatsby": "2.24.26",
     "gatsby-plugin-manifest": "2.4.21",
@@ -52,9 +52,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/taylorbryant/gatsby-starter-tailwind"
+    "url": "https://github.com/joekariuki/codestudiosofficial"
   },
   "bugs": {
-    "url": "https://github.com/taylorbryant/gatsby-starter-tailwind/issues"
+    "url": "https://github.com/joekariuki/codestudiosofficial/issues"
   }
 }
