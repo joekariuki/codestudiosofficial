@@ -14,8 +14,8 @@ function Header() {
   `);
 
   return (
-    <header className="bg-transparent font-sans">
-      <div className="container mx-auto flex flex-wrap p-5 border-b-2 border-white flex-col md:flex-row items-center">
+    <header className="bg-black font-sans pb-32">
+      <div className="container mx-auto flex flex-wrap pt-6 px-16 flex-col md:flex-row items-center">
       <button
           className="flex items-center block px-3 py-2 text-white border-none md:hidden"
           onClick={() => toggleExpansion(!isExpanded)}
@@ -65,6 +65,9 @@ function Header() {
             </Link>
           ))}
         </nav>
+      </div>
+      <div className="px-16 mt-2">
+        <hr className="border-solid border-1 border-white"></hr>
       </div>
     </header>
   );

@@ -3,14 +3,14 @@ import React from "react";
 function Footer() {
   return (
     <footer className="text-gray-700 body-font bg-transparent">
-      <div className="container mx-auto py-4 px-5 grid grid-cols-3 gap-4" >
+      <div className="container mx-auto py-8 px-5 grid grid-cols-3 gap-4" >
           <div></div>
-          <p className="uppercase text-white text-sm text-center mx-auto" style={footerText}>
+          <p className="uppercase text-black text-base text-center mx-auto" style={footerText}>
             © 2020 The Code Studios
           </p>
 
           <span className="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
-            <a className="text-white">
+            <a className="text-black">
               <svg
                 fill="currentColor"
                 strokeLinecap="round"
@@ -22,7 +22,7 @@ function Footer() {
                 <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
               </svg>
             </a>
-            <a className="ml-3 text-white">
+            <a className="ml-6 text-black">
               <svg
                 fill="currentColor"
                 strokeLinecap="round"
@@ -34,7 +34,7 @@ function Footer() {
                 <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
               </svg>
             </a>
-            <a className="ml-3 text-white">
+            <a className="ml-6 text-black">
               <svg
                 fill="none"
                 stroke="currentColor"
@@ -48,7 +48,7 @@ function Footer() {
                 <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
               </svg>
             </a>
-            <a className="ml-3 text-white">
+            <a className="ml-6 text-black">
               <svg
                 fill="currentColor"
                 stroke="currentColor"
