@@ -11,7 +11,7 @@ function TheBrandPage() {
         keywords={[`The Code Studios`, `About`, `The Brand`]}
         title="The Brand"
       />
-      <section className="text-gray-700 body-font">
+      <section className="text-black body-font">
         <div className="container mx-auto flex px-5 py-56 md:flex-row flex-col items-center">
           <div className="text-center w-full">
             <h1 className="uppercase pb-12 text-2xl">The Brand</h1>
@@ -36,8 +36,8 @@ function TheBrandPage() {
               Our identity. Our truth. Our code.
             </p>
             <p>We are The Code Studios</p>
-            <div className="flex items-center">
-              <img src={logo} />
+            <div style={brandImage}>
+                <img src={logo} />
             </div>
           </div>
         </div>
@@ -45,5 +45,11 @@ function TheBrandPage() {
     </Layout>
   );
 }
+
+const brandImage = {
+  display: `flex`,
+  alignItems: `center`,
+  justifyContent: `center`,
+};
 
 export default TheBrandPage;
