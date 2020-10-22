@@ -3,15 +3,15 @@ import React from "react";
 
 import "../css/index.css";
 
-import Header from "./header";
-import Footer from "./footer";
+import IndexHeader from "./indexHeader";
+import IndexFooter from "./indexFooter";
 
 function IndexLayout({ children }) {
   return (
     <div className="flex flex-col min-h-screen font-sans" id="background">
-      <Header />
+      <IndexHeader />
       <main className="body-font">{children}</main>
-      <Footer />
+      <IndexFooter />
     </div>
   );
 }
