@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: "Calibri";
-  src: url("../assets/fonts/Calibri\ Regular.ttf") format("embedded-opentype"),
-    url("../assets/fonts/Calibri\ Regular.ttf") format("woff2"),
-    url("../assets/fonts/Calibri\ Regular.ttf") format("woff"),
-    url("../assets/fonts/Calibri\ Regular.ttf") format("truetype"),
-    url("../assets/fonts/Calibri\ Regular.ttf") format("svg");
+  src: url("../assets/fonts/Calibri-Regular.ttf") format("embedded-opentype"),
+    url("../assets/fonts/Calibri-Regular.ttf") format("woff2"),
+    url("../assets/fonts/Calibri-Regular.ttf") format("woff"),
+    url("../assets/fonts/Calibri-Regular.ttf") format("truetype"),
+    url("../assets/fonts/Calibri-Regular.ttf") format("svg");
 }
 
 #background {
