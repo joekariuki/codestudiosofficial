@@ -1,21 +1,21 @@
-import { Link } from "gatsby";
+import { graphql, useStaticQuery, Link } from "gatsby";
 import React, { useState } from "react";
 
 function IndexHeader() {
   const [isExpanded, toggleExpansion] = useState(false);
-//   const { site } = useStaticQuery(graphql`
-//     query SiteTitleQuery {
-//       site {
-//         siteMetadata {
-//           title
-//         }
-//       }
-//     }
-//   `);
+  const { site } = useStaticQuery(graphql`
+    query SiteTitleQuery2 {
+      site {
+        siteMetadata {
+          title
+        }
+      }
+    }
+  `);
 
   return (
     <header className="bg-transparent font-sans">
-      <div className="container mx-auto flex flex-wrap p-5 border-b-2 border-white flex-col md:flex-row items-center">
+      <div className="mx-auto flex flex-wrap pt-6 px-24 flex-col md:flex-row items-center">
       <button
           className="flex items-center block px-3 py-2 text-white border-none md:hidden"
           onClick={() => toggleExpansion(!isExpanded)}
@@ -33,7 +33,7 @@ function IndexHeader() {
         <Link to="/">
           <h1 className="flex items-center text-white no-underline">
             <span className="text-xl font-medium font-sans tracking-widest uppercase">
-              THE CODE STUDIOS
+              {site.siteMetadata.title}
             </span>
           </h1>
         </Link>
@@ -66,8 +66,12 @@ function IndexHeader() {
           ))}
         </nav>
       </div>
+      <div className="px-16 mt-6">
+        <hr className="border-solid border-1 border-white"></hr>
+      </div>
     </header>
   );
 }
 
 export default IndexHeader;
+
