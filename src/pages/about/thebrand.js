@@ -12,10 +12,10 @@ function TheBrandPage() {
         title="The Brand"
       />
       <section className="text-black body-font">
-        <div className="container mx-auto flex px-5 py-56 md:flex-row flex-col items-center">
+        <div className="container mx-auto flex px-5 md:flex-row flex-col items-center">
           <div className="text-center w-full">
-            <h1 className="uppercase pb-12 text-2xl">The Brand</h1>
-            <p className="flex items-center mb-4">
+            <h1 className="uppercase pb-12 text-2xl tracking-wide">The Brand</h1>
+            <p className="px-10 flex items-center mb-4">
               The Code Studios is a contemporary art, design, and fashion brand
               founded by Peyton, the Artist. We are built upon the principle of
               producing artistic clothing, art, and content, “For creatives, by
