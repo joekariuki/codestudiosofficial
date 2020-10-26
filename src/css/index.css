@@ -1,19 +1,73 @@
+/*  DEFAULT CSS */
+
 @font-face {
-    font-family: "Calibri";
-    src: url("../assets/fonts/Calibri\ Regular.ttf") format('embedded-opentype'),
-    url("../assets/fonts/Calibri\ Regular.ttf") format('woff2'),
-    url("../assets/fonts/Calibri\ Regular.ttf") format('woff'),
-    url("../assets/fonts/Calibri\ Regular.ttf") format('truetype'),
-    url("../assets/fonts/Calibri\ Regular.ttf") format('svg');
+  font-family: "Calibri";
+  src: url("../assets/fonts/Calibri\ Regular.ttf") format("embedded-opentype"),
+    url("../assets/fonts/Calibri\ Regular.ttf") format("woff2"),
+    url("../assets/fonts/Calibri\ Regular.ttf") format("woff"),
+    url("../assets/fonts/Calibri\ Regular.ttf") format("truetype"),
+    url("../assets/fonts/Calibri\ Regular.ttf") format("svg");
 }
 
-
 #background {
-    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url('../assets/images/background.jpg');
-    background-position: center;
-    background-size: cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../assets/images/background.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 html {
-    font-family: "Calibri";
+  font-family: "Calibri";
+}
+
+/*  INDEX PAGE  */
+
+#header {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../assets/images/background.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.viewport-header {
+  position: relative;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.background-video-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+}
+
+#bg-vid {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+
+
+.background-video-text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
