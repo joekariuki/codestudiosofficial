@@ -71,3 +71,11 @@ html {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+
+/*  PORTFOLIO PAGES  */
+.artwork-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
