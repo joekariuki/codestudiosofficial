@@ -13,21 +13,18 @@ function ColorsPage() {
     {
       img: `${blueGirl}`,
       title: `“Blue Girl”`,
-      number: ``,
       description: `Acrylic paint on canvas`,
       size: `24” x 18”`,
     },
     {
       img: `${redGirl}`,
       title: `“Red Girl”`,
-      number: ``,
       description: `Acrylic paint on canvas`,
       size: `20” x 16”`,
     },
     {
       img: `${brown}`,
       title: `“Brown”`,
-      number: ``,
       description: `Acrylic paint on canvas`,
       size: `16” x 20”`,
     },
@@ -53,7 +50,6 @@ function ColorsPage() {
               <p className="uppercase pt-4 text-base font-bold">
                 {artwork.title}
               </p>
-              <p>{artwork.number}</p>
               <p>{artwork.description}</p>
             </div>
           ))}
