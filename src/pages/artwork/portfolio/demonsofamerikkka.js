@@ -3,11 +3,43 @@ import React from "react";
 import Layout from "../../../components/layout";
 import SEO from "../../../components/seo";
 
-
-import cremeDeLaCreme from "../../../assets/images/portfolio/Demons-Of-Amerikkka/creme-de-la-creme.png";
-import artOfWar from "../../../assets/images/portfolio/Demons-Of-Amerikkka/art-of-war.png";
+import cremeDeLaCreme from "../../../assets/images/portfolio/demons-of-amerikkka/creme-de-la-creme.png";
+import artOfWar from "../../../assets/images/portfolio/demons-of-amerikkka/art-of-war.png";
+import kingAlfred from "../../../assets/images/portfolio/demons-of-amerikkka/king-alfred-cold-game.png";
+import demonsOfAmerikkka from "../../../assets/images/portfolio/demons-of-amerikkka/demons-of-amerikkka.png";
 
 function DemonsOfAmerikkkaPage() {
+  // Demons of Amerikkka Artwork
+  const portfolio = [
+    {
+      img: `${cremeDeLaCreme}`,
+      title: `"Creme De La Creme”`,
+      number: ``,
+      description: `Charcoal, graphite, and color pencil on construction paper`,
+      size: ``,
+    },
+    {
+      img: `${artOfWar}`,
+      title: `“Art of War”`,
+      number: `(1/3)`,
+      description: `Charcoal, graphite, copic markers, acrylic paint, and collage on construction paper`,
+      size: `12” x 24”`,
+    },
+    {
+      img: `${kingAlfred}`,
+      title: `“King Alfred's Cold Game”`,
+      number: `(2/3)`,
+      description: `Oil paint and resin on two 36” x 36” canvases (diptic)`,
+      size: `36” x 72”`,
+    },
+    {
+      img: `${demonsOfAmerikkka}`,
+      title: `“Demons of Amerikkka”`,
+      number: `(3/3)`,
+      description: `Oil paint on canvas`,
+      size: `6” x 10”`,
+    },
+  ];
   return (
     <Layout>
       <SEO
@@ -24,26 +56,18 @@ function DemonsOfAmerikkkaPage() {
           <h1 className="uppercase pb-8 font-bold text-xl tracking-wide">
             Demons of Amerikkka
           </h1>
-
-          <div className="pb-8">
-            <div className="artwork-image">
-              <img src={cremeDeLaCreme} />
+          {portfolio.map((artwork) => (
+            <div className="pb-8" key={artwork.title}>
+              <div className="artwork-image">
+                <img src={artwork.img} />
+              </div>
+              <p className="uppercase pt-4 text-base font-bold">
+                {artwork.title}
+              </p>
+              <p>{artwork.number}</p>
+              <p>{artwork.description}</p>
             </div>
-            <p className="uppercase pt-4 text-base font-bold">“Creme de la Creme”</p>
-            <p>Charcoal, graphite, and color pencil on construction paper</p>
-          </div>
-
-          <div className="pb-8">
-            <div className="artwork-image">
-              <img src={artOfWar} />
-            </div>
-            <p className="uppercase pt-4 text-base font-bold">“Art of War”</p>
-            <p>(1/3)</p>
-            <p>Charcoal, graphite, copic markers, acrylic paint, and collage on construction paper</p>
-            <p>12” x 24”</p>
-          </div>
-
-
+          ))}
         </div>
       </section>
     </Layout>
