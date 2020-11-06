@@ -3,10 +3,10 @@ import React from "react";
 import Layout from "../../../components/layout";
 import SEO from "../../../components/seo";
 
-import cremeDeLaCreme from "../../../assets/images/portfolio/demons-of-amerikkka/creme-de-la-creme.png";
-import artOfWar from "../../../assets/images/portfolio/demons-of-amerikkka/art-of-war.png";
-import kingAlfred from "../../../assets/images/portfolio/demons-of-amerikkka/king-alfred-cold-game.png";
-import demonsOfAmerikkka from "../../../assets/images/portfolio/demons-of-amerikkka/demons-of-amerikkka.png";
+import cremeDeLaCreme from "../../../assets/images/portfolio/demonsofamerikkka/creme-de-la-creme.png";
+import artOfWar from "../../../assets/images/portfolio/demonsofamerikkka/art-of-war.png";
+import kingAlfred from "../../../assets/images/portfolio/demonsofamerikkka/king-alfred-cold-game.png";
+import demonsOfAmerikkka from "../../../assets/images/portfolio/demonsofamerikkka/demons-of-amerikkka.png";
 
 function DemonsOfAmerikkkaPage() {
   // Demons of Amerikkka Artwork
