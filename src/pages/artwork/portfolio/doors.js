@@ -4,6 +4,7 @@ import Layout from "../../../components/layout";
 import SEO from "../../../components/seo";
 
 import visions from "../../../assets/images/portfolio/doors/visions.png";
+import deixeNos from "../../../assets/images/portfolio/doors/deixe-nos-viver-em-paz.png"
 
 function DoorsPage() {
   // Doors Artwork
@@ -12,7 +13,13 @@ function DoorsPage() {
       img: `${visions}`,
       title: `“Visions”`,
       description: `Indian ink on watercolor paper`,
-      size: `25.5”x 19.5”`,
+      size: `25.5” x 19.5”`,
+    },
+    {
+      img: `${deixeNos}`,
+      title: `“Deixe Nos Viver Em Paz”`,
+      description: `Indian ink on watercolor paper`,
+      size: `15” x 20”`,
     },
   ];
   return (
