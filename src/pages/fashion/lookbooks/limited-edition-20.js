@@ -11,15 +11,15 @@ import artOfWar3 from "../../../assets/images/lookbooks/art-of-war-limited-editi
 function LimitedEdition20Page() {
   const lookBook = [
     {
-      number: `1`,
+      id: `1`,
       src: `${artOfWar1}`
     },
     {
-      number: `2`,
+      id: `2`,
       src: `${artOfWar2}`
     },
     {
-      number: `3`,
+      id: `3`,
       src: `${artOfWar3}`
     },
   ]
@@ -35,7 +35,7 @@ function LimitedEdition20Page() {
             Limited Edition &apos;20
           </h1>
           {lookBook.map((image) => (
-            <div className="pb-8" key={image.number}>
+            <div className="pb-8" key={image.id}>
               <div className="artwork-image">
                 <img src={image.src} />
               </div>
