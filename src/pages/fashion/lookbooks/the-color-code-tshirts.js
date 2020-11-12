@@ -60,11 +60,11 @@ function TheColorCodeTshirtsPage() {
       />
       <section className="text-black body-font">
         <div className="text-center w-full">
-          <h1 className="uppercase pb-8 font-bold text-2xl tracking-wide">
+          <h1 className="uppercase pb-6 font-bold text-2xl tracking-wide">
             The Color Code - Tshirts
           </h1>
           {lookBook.map((image) => (
-            <div className="pb-8" key={image.id}>
+            <div className="pb-6" key={image.id}>
               <div className="artwork-image">
                 <img src={image.src} />
               </div>
