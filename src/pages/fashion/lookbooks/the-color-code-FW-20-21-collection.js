@@ -87,7 +87,7 @@ function TheColorCodeFWCollectionPage() {
           `Lookbooks`,
           `The Color Code F:W '20-21 Collection`,
         ]}
-        title="The Color Code - Tshirts"
+        title="The Color Code F:W '20-21 Collection"
       />
       <section className="text-black body-font">
         <div className="text-center w-full">
