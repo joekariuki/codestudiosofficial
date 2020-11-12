@@ -85,7 +85,7 @@ function TheColorCodeFWCollectionPage() {
           `The Code Studios`,
           `Fashion`,
           `Lookbooks`,
-          `The Color Code - Tshirts`,
+          `The Color Code F:W '20-21 Collection`,
         ]}
         title="The Color Code - Tshirts"
       />
