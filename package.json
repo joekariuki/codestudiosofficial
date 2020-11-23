@@ -4,6 +4,7 @@
   "version": "4.0.0",
   "author": "Joe Kariuki",
   "dependencies": {
+    "@stripe/stripe-js": "^1.11.0",
     "gatsby": "2.24.26",
     "gatsby-plugin-manifest": "2.4.21",
     "gatsby-plugin-offline": "3.2.21",
