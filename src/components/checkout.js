@@ -40,7 +40,7 @@ const Checkout = () => {
           allowedCountries: ['US', 'CA']
       },
       mode: "payment",
-      lineItems: [{ price: "price_1HqecpH1oPjHlECgbO0f6Wyf", quantity: 1 }],
+      lineItems: [{ price: process.env.PRICE_ID, quantity: 1 }],
       successUrl: `${window.location.origin}/`,
       cancelUrl: `${window.location.origin}/fashion/readytowear/`,
     });
