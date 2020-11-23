@@ -12,3 +12,8 @@ yarn-error.log
 
 # deployment-specific configs
 now.json
+
+# dotenv environment variables files
+.env
+.env.development
+.env.production
