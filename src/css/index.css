@@ -103,9 +103,7 @@ html {
   margin: 0 auto;
   max-width: 100%;
 }
-p {
-  text-align: center;
-}
+
 .toggle,
 [id^="drop"] {
   display: none;
