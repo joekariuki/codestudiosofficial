@@ -21,7 +21,7 @@ const buttonDisabledStyles = {
 let stripePromise;
 const getStripe = () => {
   if (!stripePromise) {
-    stripePromise = loadStripe(`${process.env.STRIPE_PUBLISHABLE_KEY}`);
+    stripePromise = loadStripe(`${process.env.GATSBY_STRIPE_PUBLISHABLE_KEY}`);
   }
   return stripePromise;
 };
@@ -40,7 +40,7 @@ const Checkout = () => {
           allowedCountries: ['US', 'CA']
       },
       mode: "payment",
-      lineItems: [{ price: `${process.env.PRICE_ID}`, quantity: 1 }],
+      lineItems: [{ price: `${process.env.GATSBY_PRICE_ID}`, quantity: 1 }],
       successUrl: `${window.location.origin}/`,
       cancelUrl: `${window.location.origin}/fashion/readytowear/`,
     });
