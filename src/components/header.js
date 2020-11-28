@@ -1,8 +1,7 @@
 import { graphql, useStaticQuery, Link } from "gatsby";
-import React, { useState } from "react";
+import React from "react";
 
 function Header() {
-  const [isExpanded, toggleExpansion] = useState(false);
   const { site } = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -16,19 +15,6 @@ function Header() {
   return (
     <header className="bg-black font-sans pb-32" id="header">
       <div className="mx-auto flex flex-wrap pt-6 px-24 flex-col md:flex-row items-center">
-      <button
-          className="flex items-center block px-3 py-2 text-white border-none md:hidden"
-          onClick={() => toggleExpansion(!isExpanded)}
-        >
-          <svg
-            className="w-3 h-3 fill-current"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <title>Menu</title>
-            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-          </svg>
-        </button>
 
         <Link to="/">
           <h1 className="flex items-center text-white no-underline">
@@ -37,33 +23,116 @@ function Header() {
             </span>
           </h1>
         </Link>
-        <nav
-          className={`${
-            isExpanded ? `block` : `hidden`
-          } md:block md:flex md:items-center w-full md:w-auto ml-auto uppercase`}
-        >
-          {[
-            {
-              route: `/about`,
-              title: `About`,
-            },
-            {
-              route: `/artwork`,
-              title: `Artwork`,
-            },
-            {
-              route: `/fashion`,
-              title: `Fashion`,
-            }
-          ].map((link) => (
-            <Link
-              className="block mt-4 text-white no-underline md:inline-block md:mt-0 md:ml-6"
-              key={link.title}
-              to={link.route}
-            >
-              {link.title}
-            </Link>
-          ))}
+        
+        <nav>
+          <label htmlFor="drop" className="toggle text-white ml-2">
+            &#8801; Menu
+          </label>
+          <input type="checkbox" id="drop" />
+          <ul className="menu">
+            <li>
+              {/* <!-- First Tier Drop Down --> */}
+              <label htmlFor="drop-1" className="toggle">
+                About
+              </label>
+              <a href="#" className="text-white">
+                About
+              </a>
+              <input type="checkbox" id="drop-1" />
+              <ul>
+                <li className="bg-white text-black hover:bg-black hover:text-white">
+                  <Link to="/about/theartist">The Artist</Link>
+                </li>
+                <li className="bg-white text-black hover:bg-black hover:text-white">
+                  <Link to="/about/thebrand">The Brand</Link>
+                </li>
+              </ul>
+            </li>
+            <li>
+              {/* <!-- First Tier Drop Down --> */}
+              <label htmlFor="drop-2" className="toggle">
+                Artwork
+              </label>
+              <a href="#" className="text-white">
+                Artwork
+              </a>
+              <input type="checkbox" id="drop-2" />
+              <ul>
+                <li>
+                  {/* <!-- Second Tier Drop Down --> */}
+                  <label htmlFor="drop-3" className="toggle">
+                    Portfolio
+                  </label>
+                  <a
+                    href="#"
+                    className="bg-white text-black hover:bg-black hover:text-white"
+                  >
+                    Portfolio
+                  </a>
+                  <input type="checkbox" id="drop-3" />
+                  <ul>
+                    <li className="bg-white text-black hover:bg-black hover:text-white w-64">
+                      <Link to="/artwork/portfolio/demonsofamerikkka">
+                        Demons of Amerikkka
+                      </Link>
+                    </li>
+                    <li className="bg-white text-black hover:bg-black hover:text-white w-64">
+                      <Link to="/artwork/portfolio/colors">Colors</Link>
+                    </li>
+                    <li className="bg-white text-black hover:bg-black hover:text-white w-64">
+                      <Link to="/artwork/portfolio/doors">Doors</Link>
+                    </li>
+                    <li className="bg-white text-black hover:bg-black hover:text-white w-64">
+                      <Link to="/artwork/portfolio/other">Other</Link>
+                    </li>
+                  </ul>
+                </li>
+                <li className="bg-white text-black hover:bg-black hover:text-white">
+                  <Link to="/artwork/videos">Videos</Link>
+                </li>
+              </ul>
+            </li>
+            <li>
+              {/* <!-- First Tier Drop Down --> */}
+              <label htmlFor="drop-2" className="toggle">
+                Fashion
+              </label>
+              <a href="#" className="text-white">
+                Fashion
+              </a>
+              <input type="checkbox" id="drop-2" />
+              <ul>
+                <li className="bg-white text-black hover:bg-black hover:text-white">
+                  {/* <!-- Second Tier Drop Down --> */}
+                  <label htmlFor="drop-3" className="toggle">
+                    Lookbooks
+                  </label>
+                  <a href="#">Lookbooks</a>
+                  <input type="checkbox" id="drop-3" />
+                  <ul>
+                    <li className="bg-white text-black hover:bg-black hover:text-white w-64">
+                      <Link to="/fashion/lookbooks/limited-edition-20">
+                        Limited Edition &apos;20
+                      </Link>
+                    </li>
+                    <li className="bg-white text-black hover:bg-black hover:text-white w-64">
+                      <Link to="/fashion/lookbooks/the-color-code-FW-20-21-collection">
+                        The Color Code FW &apos;20-21
+                      </Link>
+                    </li>
+                    <li className="bg-white text-black hover:bg-black hover:text-white w-64">
+                      <Link to="/fashion/lookbooks/the-color-code-tshirts">
+                        The Color Code Tshirts
+                      </Link>
+                    </li>
+                  </ul>
+                </li>
+                <li className="bg-white text-black hover:bg-black hover:text-white">
+                  <Link to="/fashion/readytowear">Ready to Wear</Link>
+                </li>
+              </ul>
+            </li>
+          </ul>
         </nav>
       </div>
       <div className="px-16 mt-6">
@@ -75,6 +144,6 @@ function Header() {
 
 const header = {
   background: `linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url('../assets/images/background.jpg')`,
-}
+};
 
 export default Header;
