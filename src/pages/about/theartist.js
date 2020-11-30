@@ -12,7 +12,9 @@ function TheArtistPage() {
         title="The Artist"
       />
       <section className="body-font">
-        <h1 className="text-center uppercase text-2xl tracking-wide">The Artist</h1>
+        <h1 className="text-center uppercase text-2xl tracking-wide">
+          The Artist
+        </h1>
         <div className="container mx-auto flex pt-10 pb-24 md:flex-row flex-col items-center">
           <div className="lg:max-w-xl lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
             <img
@@ -20,38 +22,40 @@ function TheArtistPage() {
               alt="Image of the artist and founder, Peyton Euriah"
               src={artistImage}
             />
-            <span className="text-lg uppercase leading-relaxed tracking-wider">Peyton Euriah, Founder of The Code Studios</span>
+            <span className="text-lg uppercase leading-relaxed tracking-wider">
+              Peyton Euriah, Founder of The Code Studios
+            </span>
           </div>
 
           <div className="lg:flex-grow md:w-1/2 lg:pl-16 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center text-lg">
             <p className="mb-4 leading-relaxed">
-              My name is Peyton, the Artist, and I’ve been a creator for pretty
-              much all my life. I was born to an interior designer/event planner
-              and architect in Los Angeles, California, and am a self-taught
-              visual artist. I earned a B.S. degree in Studio Art with a double
-              minor in fashion merchandising and business in 2020, and have
-              continued to pursue my creative endeavors through my platform, The
-              Code Studios.
+              Peyton E. <span className="italic">“The Artist”</span> Burnett was
+              born in Los Angeles, CA in 1997. She earned a B.S. in Studio Art
+              with a concentration in painting, and a double minor in Fashion
+              Merchandising and Business, at Marist College in 2020. Peyton’s
+              art and focuses of study have allowed her to travel throughout 21
+              countries along Southeast and East Asia, Europe, and Africa.
             </p>
             <p className="mb-4 leading-relaxed">
-              Growing up in a household that fostered family, God, the arts, and
-              vision, my passion for art, design, and fashion was fueled at a
-              fairly young age. My vision for The Code Studios came about when I
-              was only twelve years old after being influenced by unconventional
-              artists and fashion designers such as my father, Patrick Nagel,
-              Jean-Michel Basquiat, Paco Rabanne, and Alexander McQueen.
+              Her works have been exhibited in the US and abroad including a
+              student-organized exhibition at the 2019 Venice Biennale Festival,
+              and various creative pop-up shops throughout Southern California.
+              She has also been commissioned to do live painting for different
+              types of events (including corporate) such as the Los Angeles
+              Neighborhood Housing Services 35th Anniversary at the famed
+              Paramount Studios NY set in 2019.Her works have been recognized in
+              a number of news and media outlets such as Voyage LA magazine,
+              Black Design Collective, and Marist College’s “For the Record”,
+              curated by Marist Circle.
             </p>
             <p className="mb-4 leading-relaxed">
-              Since that moment, I have stopped at nothing to see to it that
-              that vision was fulfilled. My desire in creating this platform is
-              to bridge the gap between art, design, and fashion through my
-              creations and collaborations with other groundbreaking creatives.
-              However, more importantly, I hope to help my generation of
-              creators grow more accustomed to coming together to share ideas,
-              cross/integrate mediums, and produce bodies of art that speak to
-              our experiences as living, walking canvases with unique
-              identities, abilities, and stories to tell.
-            </p>            
+              Peyton currently resides in Los Angeles continuing her art,
+              fashion &#38; designs through her company, THE CODE STUDIOS, with
+              the intention of creating an immersive atmosphere for artists of
+              all skillsets to create and collaborate in, empowering the Black
+              community through art, and designing merchandise that combines her
+              favorite mediums to express her avant garde style.
+            </p>
           </div>
         </div>
       </section>
