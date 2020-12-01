@@ -6,40 +6,34 @@ import "../css/index.css";
 import IndexHeader from "./indexHeader";
 import IndexFooter from "./indexFooter";
 import backgroundVideo from "../assets/videos/bts-video-edited.mp4";
-import backgroundImage from "../assets/images/bg-image.png";
+import videoPoster from "../assets/images/bg-image.png";
 
 function IndexLayout({ children }) {
   return (
+    <>
+      <video
+        playsInline
+        autoPlay
+        muted
+        loop
+        id="bg-video"
+        poster={videoPoster}
+      >
+        <source src={backgroundVideo} type="video/mp4" />
+      </video>
 
-    <div>
-      <div className="background-video-container">
-        <video
-          playsInline
-          autoPlay
-          muted
-          loop
-          poster={backgroundImage}
-          id="bg-vid"
-        >
-          <source src={backgroundVideo} type="video/mp4" />
-        </video>
 
-        <div className="background-video-overlay"></div>
 
-        <div className="viewport-area">
-          <div className="flex flex-col min-h-screen font-sans">
-            <IndexHeader />
-            <main className="px-4 py-6 md:px-8 md:py-12">{children}</main>
-            <IndexFooter />
-          </div>
+        <div className="flex flex-col min-h-screen font-sans viewport-area">
+          <IndexHeader />
+          <main className="px-4 py-6 md:px-8 md:py-12 bg-video-text-overlay">
+            {children}
+          </main>
+          <IndexFooter />
         </div>
-
-
-      </div>
-    </div>
+    </>
   );
 }
-
 
 IndexLayout.propTypes = {
   children: PropTypes.node.isRequired,
