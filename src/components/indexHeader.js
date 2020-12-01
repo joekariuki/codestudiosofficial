@@ -31,7 +31,7 @@ function IndexHeader() {
           <ul className="menu">
             <li>
               {/* <!-- First Tier Drop Down --> */}
-              <label htmlFor="drop-1" className="toggle">
+              <label htmlFor="drop-1" className="toggle text-white">
                 About
               </label>
               <a href="#" className="text-white">
@@ -49,7 +49,7 @@ function IndexHeader() {
             </li>
             <li>
               {/* <!-- First Tier Drop Down --> */}
-              <label htmlFor="drop-2" className="toggle">
+              <label htmlFor="drop-2" className="toggle text-white">
                 Artwork
               </label>
               <a href="#" className="text-white">
@@ -59,7 +59,7 @@ function IndexHeader() {
               <ul>
                 <li>
                   {/* <!-- Second Tier Drop Down --> */}
-                  <label htmlFor="drop-3" className="toggle">
+                  <label htmlFor="drop-3" className="toggle bg-white text-black hover:bg-black hover:text-white">
                     Portfolio
                   </label>
                   <a
@@ -93,21 +93,21 @@ function IndexHeader() {
             </li>
             <li>
               {/* <!-- First Tier Drop Down --> */}
-              <label htmlFor="drop-2" className="toggle">
+              <label htmlFor="drop-4" className="toggle text-white">
                 Fashion
               </label>
               <a href="#" className="text-white">
                 Fashion
               </a>
-              <input type="checkbox" id="drop-2" />
+              <input type="checkbox" id="drop-4" />
               <ul>
-                <li className="bg-white text-black hover:bg-black hover:text-white">
+                <li>
                   {/* <!-- Second Tier Drop Down --> */}
-                  <label htmlFor="drop-3" className="toggle">
+                  <label htmlFor="drop-5" className="toggle bg-white text-black hover:bg-black hover:text-white">
                     Lookbooks
                   </label>
-                  <a href="#">Lookbooks</a>
-                  <input type="checkbox" id="drop-3" />
+                  <a href="#" className="bg-white text-black hover:bg-black hover:text-white">Lookbooks</a>
+                  <input type="checkbox" id="drop-5" />
                   <ul>
                     <li className="bg-white text-black hover:bg-black hover:text-white w-64">
                       <Link to="/fashion/lookbooks/limited-edition-20">

@@ -9,33 +9,16 @@
     url("../assets/fonts/Calibri-Regular.ttf") format("svg");
 }
 
-/* #background {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("../assets/images/background.jpg");
-  background-position: center;
-  background-size: cover;
-} */
 
 html {
   font-family: "Calibri";
 }
-
-/*  INDEX PAGE  */
 
 #header {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("../assets/images/background.jpg");
   background-position: center;
   background-size: cover;
-}
-
-.viewport-header {
-  position: relative;
-  height: 100vh;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 /*  INDEX PAGE  */
@@ -100,9 +83,7 @@ nav {
   text-transform: uppercase;
 }
 
-
-
- nav:after {
+nav:after {
   content: "";
   display: table;
   clear: both;
@@ -131,7 +112,6 @@ nav a {
   text-decoration: none;
 }
 
-
 nav ul ul {
   display: none;
   position: absolute;
@@ -155,13 +135,10 @@ nav ul ul ul li {
   left: 170px;
 }
 
-
 /* Media Queries
 --------------------------------------------- */
 
-@media all and (max-width : 768px) {
-
-
+@media all and (max-width: 768px) {
   nav {
     margin: 0;
   }
@@ -173,15 +150,12 @@ nav ul ul ul li {
 
   .toggle {
     display: block;
-    background-color: transparent;
     padding: 0 20px;
     font-size: 1rem;
     line-height: 3.75rem;
     text-decoration: none;
     border: none;
-    color: #ffffff;
   }
-
 
   [id^="drop"]:checked + ul {
     display: block;
@@ -201,15 +175,7 @@ nav ul ul ul li {
     padding: 0 80px;
   }
 
-  nav a:hover,
-  nav ul ul ul a {
-    background-color: #000000;
-  }
 
-  nav ul li ul li .toggle,
-  nav ul ul a {
-    background-color: transparent;
-  }
 
   nav ul ul {
     float: none;
