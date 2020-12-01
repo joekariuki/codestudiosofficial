@@ -16,7 +16,7 @@ function IndexHeader() {
     <header className="bg-transparent font-sans">
       <div className="mx-auto flex flex-wrap pt-6 px-24 flex-col md:flex-row items-center">
         <Link to="/">
-          <h1 className="flex items-center text-white no-underline">
+          <h1 className="flex items-center text-center text-white no-underline">
             <span className="text-xl font-medium font-sans tracking-widest uppercase">
               {site.siteMetadata.title}
             </span>
