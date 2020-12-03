@@ -132,6 +132,14 @@ function Header() {
                 </li>
               </ul>
             </li>
+            <li>
+              {/* <!-- First Tier Drop Down --> */}
+              <label htmlFor="drop-1" className="toggle text-white">
+                Contact
+              </label>
+              <Link to="/contact" className="text-white">Contact</Link>
+              <input type="checkbox" id="drop-6" />
+            </li>
           </ul>
         </nav>
       </div>
