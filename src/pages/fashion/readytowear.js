@@ -1,8 +1,7 @@
 import React from "react";
 import Checkout from "../../components/checkout";
 
-
-import jacketImage from "../../assets/images/shop/demonsofamerikka-vest-and-jacket.jpg";
+import Lightbox from "../../components/lightbox"
 
 import Layout from "../../components/layout";
 import SEO from "../../components/seo";
@@ -22,11 +21,12 @@ function ReadyToWearPage() {
 
           <div className="container px-5 py-12 mx-auto">
             <div className="lg:w-4/5 mx-auto flex flex-wrap">
-              <img
-                alt="ecommerce"
-                className="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center"
-                src={jacketImage}
-              />
+
+
+              <div className="lg:w-1/2 w-full lg:mt-0">
+                <Lightbox />
+              </div>
+
               <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
                 <h1 className="text-black text-4xl title-font font-bold mb-1">
                   “ART OF WAR” Vest and Jacket Set
