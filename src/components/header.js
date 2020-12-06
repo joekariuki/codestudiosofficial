@@ -15,7 +15,6 @@ function Header() {
   return (
     <header className="bg-black font-sans pb-32" id="header">
       <div className="mx-auto flex flex-wrap pt-6 px-24 flex-col md:flex-row items-center">
-
         <Link to="/">
           <h1 className="flex items-center text-center text-white no-underline">
             <span className="text-xl font-medium font-sans tracking-widest uppercase">
@@ -23,7 +22,7 @@ function Header() {
             </span>
           </h1>
         </Link>
-        
+
         <nav>
           <label htmlFor="drop" className="toggle text-white ml-2">
             &#8801; Menu
@@ -60,7 +59,10 @@ function Header() {
               <ul>
                 <li>
                   {/* <!-- Second Tier Drop Down --> */}
-                  <label htmlFor="drop-3" className="toggle bg-white text-black hover:bg-black hover:text-white">
+                  <label
+                    htmlFor="drop-3"
+                    className="toggle bg-white text-black hover:bg-black hover:text-white"
+                  >
                     Portfolio
                   </label>
                   <a
@@ -104,10 +106,18 @@ function Header() {
               <ul>
                 <li>
                   {/* <!-- Second Tier Drop Down --> */}
-                  <label htmlFor="drop-5" className="toggle bg-white text-black hover:bg-black hover:text-white">
+                  <label
+                    htmlFor="drop-5"
+                    className="toggle bg-white text-black hover:bg-black hover:text-white"
+                  >
                     Lookbooks
                   </label>
-                  <a href="#"  className="bg-white text-black hover:bg-black hover:text-white">Lookbooks</a>
+                  <a
+                    href="#"
+                    className="bg-white text-black hover:bg-black hover:text-white"
+                  >
+                    Lookbooks
+                  </a>
                   <input type="checkbox" id="drop-5" />
                   <ul>
                     <li className="bg-white text-black hover:bg-black hover:text-white w-64">
@@ -133,12 +143,9 @@ function Header() {
               </ul>
             </li>
             <li>
-              {/* <!-- First Tier Drop Down --> */}
-              <label htmlFor="drop-1" className="toggle text-white">
+              <Link to="/contact" className="text-white">
                 Contact
-              </label>
-              <Link to="/contact" className="text-white">Contact</Link>
-              <input type="checkbox" id="drop-6" />
+              </Link>
             </li>
           </ul>
         </nav>

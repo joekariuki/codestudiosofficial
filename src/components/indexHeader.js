@@ -59,7 +59,10 @@ function IndexHeader() {
               <ul>
                 <li>
                   {/* <!-- Second Tier Drop Down --> */}
-                  <label htmlFor="drop-3" className="toggle bg-white text-black hover:bg-black hover:text-white">
+                  <label
+                    htmlFor="drop-3"
+                    className="toggle bg-white text-black hover:bg-black hover:text-white"
+                  >
                     Portfolio
                   </label>
                   <a
@@ -103,10 +106,18 @@ function IndexHeader() {
               <ul>
                 <li>
                   {/* <!-- Second Tier Drop Down --> */}
-                  <label htmlFor="drop-5" className="toggle bg-white text-black hover:bg-black hover:text-white">
+                  <label
+                    htmlFor="drop-5"
+                    className="toggle bg-white text-black hover:bg-black hover:text-white"
+                  >
                     Lookbooks
                   </label>
-                  <a href="#" className="bg-white text-black hover:bg-black hover:text-white">Lookbooks</a>
+                  <a
+                    href="#"
+                    className="bg-white text-black hover:bg-black hover:text-white"
+                  >
+                    Lookbooks
+                  </a>
                   <input type="checkbox" id="drop-5" />
                   <ul>
                     <li className="bg-white text-black hover:bg-black hover:text-white w-64">
@@ -132,12 +143,9 @@ function IndexHeader() {
               </ul>
             </li>
             <li>
-              {/* <!-- First Tier Drop Down --> */}
-              <label htmlFor="drop-1" className="toggle text-white">
+              <Link to="/contact" className="text-white">
                 Contact
-              </label>
-              <Link to="/contact" className="text-white">Contact</Link>
-              <input type="checkbox" id="drop-6" />
+              </Link>
             </li>
           </ul>
         </nav>
