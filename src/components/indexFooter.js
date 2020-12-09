@@ -7,7 +7,7 @@ function IndexFooter() {
       <div className="container mx-auto py-8 px-4 grid grid-cols-3 gap-4">
         <div className="text-sm text-white flex flex-wrap tracking-wider uppercase mt-1">
           <p className="mr-4">
-            <Link to="/privacy-policy">Returns &amp; Exchanges</Link>
+            <Link to="/returns">Returns &amp; Exchanges</Link>
           </p>
           <p className="mr-4">
             <Link to="/shipping">Shipping</Link>
