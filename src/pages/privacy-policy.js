@@ -157,7 +157,7 @@ function PrivacyPolicyPage() {
                 interest in improving our services and products;
               </li>
               <li>
-                · To send you promotional emails containing information we think
+                To send you promotional emails containing information we think
                 you may like when we have your consent to do so;
               </li>
               <li>
