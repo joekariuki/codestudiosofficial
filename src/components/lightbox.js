@@ -24,7 +24,7 @@ export default class LightboxExample extends Component {
     const { photoIndex, isOpen } = this.state;
     return (
       <div>       
-        <button type="button" onClick={() => this.setState({ isOpen: true })} className="lg:h-auto h-64">
+        <button type="button" onClick={() => this.setState({ isOpen: true })} className="h-auto">
         <figure>
             <img className="object-cover object-center" src={jacketImage1}/>         
         </figure>
