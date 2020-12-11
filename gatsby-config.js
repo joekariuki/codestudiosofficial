@@ -10,8 +10,9 @@ const fullConfig = resolveConfig(tailwindConfig);
 module.exports = {
   siteMetadata: {
     title: `The Code Studios`,
-    description: `Portfolio`,
+    description: `Contemporary Art, Design, and Fashion Brand founded by Peyton Euriah, the Artist`,
     author: `@peytontheartist`,
+    url: "https://www.thecodestudiosofficial.com",
   },
   plugins: [
     `gatsby-plugin-eslint`,
