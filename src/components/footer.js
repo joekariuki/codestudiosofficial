@@ -7,11 +7,12 @@ function Footer() {
       <div className="container mx-auto py-8 px-5 grid grid-cols-3 gap-4">
         <div className="text-sm text-black flex flex-wrap tracking-wider mt-1 uppercase">
           <p className="mr-4">
-            <Link to="/returns">Returns &amp; Exchanges</Link>
-          </p>
-          <p className="mr-4">
             <Link to="/shipping">Shipping</Link>
           </p>
+          <p className="mr-4">
+            <Link to="/returns">Returns &amp; Exchanges</Link>
+          </p>
+
           <p>
             <Link to="/privacy-policy">Privacy Policy</Link>
           </p>
