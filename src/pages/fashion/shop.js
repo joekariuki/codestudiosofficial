@@ -6,17 +6,17 @@ import Lightbox from "../../components/lightbox"
 import Layout from "../../components/layout";
 import SEO from "../../components/seo";
 
-function ReadyToWearPage() {
+function ShopPage() {
   return (
     <Layout>
       <SEO
-        keywords={[`The Code Studios`, `Fashion`, `Ready To Wear`]}
-        title="Ready To Wear"
+        keywords={[`The Code Studios`, `Fashion`, `Shop`]}
+        title="Shop"
       />
       <section className="container text-black body-font overflow-hidden">
         <div className="w-full">
           <h1 className="text-center uppercase font-bold text-2xl tracking-wide">
-            Ready to Wear
+            Shop
           </h1>
 
           <div className="container px-5 py-12 mx-auto">
@@ -54,4 +54,4 @@ function ReadyToWearPage() {
   );
 }
 
-export default ReadyToWearPage;
+export default ShopPage;

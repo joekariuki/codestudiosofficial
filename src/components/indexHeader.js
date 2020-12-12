@@ -138,7 +138,7 @@ function IndexHeader() {
                   </ul>
                 </li>
                 <li className="bg-white text-black hover:bg-black hover:text-white">
-                  <Link to="/fashion/readytowear">Ready to Wear</Link>
+                  <Link to="/fashion/shop">Shop</Link>
                 </li>
               </ul>
             </li>
