@@ -42,7 +42,7 @@ const Checkout = () => {
       mode: "payment",
       lineItems: [{ price: `${process.env.GATSBY_PRICE_ID}`, quantity: 1 }],
       successUrl: `${window.location.origin}/`,
-      cancelUrl: `${window.location.origin}/fashion/readytowear/`,
+      cancelUrl: `${window.location.origin}/fashion/shop/`,
     });
 
     if (error) {
