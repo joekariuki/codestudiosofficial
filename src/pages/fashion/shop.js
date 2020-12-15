@@ -19,7 +19,7 @@ function ShopPage() {
             Shop
           </h1>
 
-          <div className="container px-5 py-12 mx-auto">
+          <div className="container px-5 pt-4 pb-12 mx-auto">
             <div className="lg:w-4/5 mx-auto flex flex-wrap">
 
 
