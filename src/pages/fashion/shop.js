@@ -33,8 +33,10 @@ function ShopPage() {
                 </h1>
 
                 <h2 className="mt-4 title-font font-medium text-3xl">
-                  $100.00
+                  $110.00
                 </h2>
+                <span className="mt-2 text-sm italic font-bold">*Shipping costs included*</span>
+
 
                 <p className="leading-relaxed py-8">
                   100% Nylon Unisex vest and jacket set inspired by the drawing
