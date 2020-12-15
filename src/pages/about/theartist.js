@@ -45,9 +45,34 @@ function TheArtistPage() {
                 for different types of events (including corporate) such as the
                 Los Angeles Neighborhood Housing Services 35th Anniversary at
                 the famed Paramount Studios NY set in 2019.Her works have been
-                recognized in a number of news and media outlets such as Voyage
-                LA magazine, Black Design Collective, and Marist College’s “For
-                the Record”, curated by Marist Circle.
+                recognized in a number of news and media outlets such as{` `}
+                <a
+                  className="underline font-bold"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="http://voyagela.com/interview/meet-peyton-burnett-peyton-artist-inglewood/"
+                >
+                  Voyage LA magazine,
+                </a>
+                &nbsp;
+                <a
+                  className="underline font-bold"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://www.instagram.com/tv/CAIvFdTB4NK/"
+                >
+                  Black Design Collective,
+                </a>
+                &nbsp; and &nbsp;
+                <a
+                  className="underline font-bold"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://maristftr.com/peyton-burnett"
+                >
+                  Marist College’s “For the Record”,
+                </a>
+                &nbsp; curated by Marist Circle.
               </p>
               <p className="mb-4 leading-relaxed">
                 Peyton currently resides in Los Angeles continuing her art,
@@ -60,53 +85,10 @@ function TheArtistPage() {
               </p>
             </div>
           </div>
-          {/* <div className="lg:max-w-xl lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
-            <img
-              className="object-cover object-center mb-4"
-              alt="Image of the artist and founder, Peyton Euriah"
-              src={artistImage}
-            />
-            <span className="text-lg uppercase leading-relaxed tracking-wider">
-              Peyton Euriah, Founder of The Code Studios
-            </span>
-          </div> */}
-
-          {/* <div className="lg:flex-grow md:w-1/2 lg:pl-12 md:pl-12 flex flex-col md:items-start md:text-left items-center text-center text-lg">
-            <p className="mb-4 leading-relaxed">
-              Peyton E. <span className="italic">“The Artist”</span> Burnett was
-              born in Los Angeles, CA in 1997. She earned a B.S. in Studio Art
-              with a concentration in painting, and a double minor in Fashion
-              Merchandising and Business, at Marist College in 2020. Peyton’s
-              art and focuses of study have allowed her to travel throughout 21
-              countries along Southeast and East Asia, Europe, and Africa.
-            </p>
-            <p className="mb-4 leading-relaxed">
-              Her works have been exhibited in the US and abroad including a
-              student-organized exhibition at the 2019 Venice Biennale Festival,
-              and various creative pop-up shops throughout Southern California.
-              She has also been commissioned to do live painting for different
-              types of events (including corporate) such as the Los Angeles
-              Neighborhood Housing Services 35th Anniversary at the famed
-              Paramount Studios NY set in 2019.Her works have been recognized in
-              a number of news and media outlets such as Voyage LA magazine,
-              Black Design Collective, and Marist College’s “For the Record”,
-              curated by Marist Circle.
-            </p>
-            <p className="mb-4 leading-relaxed">
-              Peyton currently resides in Los Angeles continuing her art,
-              fashion &#38; designs through her company, THE CODE STUDIOS, with
-              the intention of creating an immersive atmosphere for artists of
-              all skillsets to create and collaborate in, empowering the Black
-              community through art, and designing merchandise that combines her
-              favorite mediums to express her avant garde style.
-            </p>
-          </div> */}
         </div>
       </section>
     </Layout>
   );
 }
-
-
 
 export default TheArtistPage;
