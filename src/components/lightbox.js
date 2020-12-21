@@ -6,12 +6,11 @@ import jacketImage1 from "../assets/images/shop/jacket-vest-1.jpg";
 import jacketImage2 from "../assets/images/shop/jacket-vest-2.jpg";
 import jacketImage3 from "../assets/images/shop/jacket-vest-3.jpg";
 import jacketImage4 from "../assets/images/shop/jacket-vest-4.jpg";
+import jacketImage5 from "../assets/images/shop/jacket-vest-5.jpg";
+import jacketImage6 from "../assets/images/shop/jacket-vest-6.jpg";
 
 
-
-
-
-const images = [jacketImage1, jacketImage2, jacketImage3, jacketImage4];
+const images = [jacketImage1, jacketImage2, jacketImage3, jacketImage4, jacketImage5, jacketImage6];
 export default class LightboxExample extends Component {
   constructor(props) {
     super(props);
