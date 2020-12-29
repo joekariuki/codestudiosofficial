@@ -28,7 +28,7 @@ function ShopPage() {
                 </h1>
 
                 <h2 className="mt-4 title-font font-medium text-3xl">
-                  $110.00
+                  $80.00
                 </h2>
                 <span className="mt-2 text-sm italic font-bold">
                   *Shipping costs included*
